@@ -4,10 +4,15 @@ project (MyTarget LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_subdirectory(external/plog)
-add_executable(my_target main.cpp)
+#add_subdirectory(external/plog)
+add_library(tuggleryCore
+#	src/Core.cpp
+	src/State.cpp
+	src/Card.cpp
+#	src/Board.cpp
+	src/Player.cpp
+)
 
-target_link_libraries(my_target PRIVATE plog)
 
 if(CMAKE_BUILD_TYPE STREQUAL "Debug")
 	target_compile_options(my_target PRIVATE -Wall -Wshadow -Wextra -Wconversion
