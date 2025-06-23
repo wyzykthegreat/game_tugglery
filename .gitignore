@@ -35,5 +35,4 @@
 external
 build-debug
 build-release
-tests
 *.swp
