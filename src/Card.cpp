@@ -1,4 +1,5 @@
-#include "Card.hpp"
+#include <stdexcept>
+#include <tugglery_core/Card.hpp>
 
 namespace tugglery {
 	
@@ -27,7 +28,7 @@ namespace tugglery {
 		Visibility visibility,
 		std::optional<int> owner_id
 	) {
-		this->visibility_ = visibility
+		this->visibility_ = visibility;
 
 		if (visibility == Visibility::Owner){
 			if (!owner_id){

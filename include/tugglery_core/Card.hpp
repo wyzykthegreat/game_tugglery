@@ -21,6 +21,8 @@ namespace tugglery {
 			// Metoda dostępu do koloru karty
 			char getSuit() const;
 			
+			int getOwnerId() const;
+
 			Visibility getVisibility() const;
 
 			// Metoda na zmiane stanu widocznosci
