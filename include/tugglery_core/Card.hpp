@@ -5,7 +5,6 @@ namespace tugglery {
 	{
 		public:
 			Card(int value, char suit);
-			~Card();
 			
 			// Metoda dostępu do wartości karty
 			int getValue() const;
@@ -14,7 +13,7 @@ namespace tugglery {
 			int getSuit() const;
 
 		private:
-			int value;
-			char suit;
+			int value_;
+			char suit_;
 	}
 }

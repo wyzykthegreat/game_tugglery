@@ -1,11 +1,16 @@
 #include "Card.hpp"
 
-Card::Card(int value, char suit) : value(value), suit(suit) {}
+namespace tugglery {
+	
+	Card::Card(int value, char suit) : value_(value), suit_(suit) {}
 
-int Card::getValue() const {
-    return value;
-}
+	Card::getValue() const {
+    	return value_;
+	}
 
-char Card::getSuit() const {
-    return suit;
+	Card::getSuit() const {
+    	return suit_;
+	}
+
+
 }
