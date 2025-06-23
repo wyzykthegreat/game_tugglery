@@ -7,10 +7,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #add_subdirectory(external/plog)
 add_library(tuggleryCore
 #	src/Core.cpp
-	src/State.cpp
+#	src/State.cpp
 	src/Card.cpp
 #	src/Board.cpp
-	src/Player.cpp
+#	src/Player.cpp
 )
 
 
